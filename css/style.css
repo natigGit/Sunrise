@@ -28,9 +28,22 @@ body{
 }
 
 ::-webkit-scrollbar {
-    width: 10;
+    width: 10px;
+    height: 10px;
 }
 
+html ::-webkit-scrollbar-button {
+    display: none;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background-color: #ff9380;
+    border-radius: none;
+}
+
+html ::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
 
 .wrapper{
     max-width: 1770px;
@@ -48,7 +61,7 @@ body{
 }
 
 .header_content{
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
     color: #000;
@@ -59,12 +72,12 @@ body{
 }
 
 .header_nav_menu{
-    display: flex;
+    display: inline-flex;
 }
 
 .header_nav_menu li{
-    margin-left: 42px;
-    display: flex;
+    margin-left: 67px; /*42+25*/
+    display: inline-flex;
     flex-wrap: wrap;
 }
 
@@ -73,18 +86,29 @@ body{
 }
 
 .header_nav_menu a{
-    padding-right: 25px;
+    
 }
 
 
 .a_span{
     opacity:0;
     transition: all 0.3s linear;
-    
 }
 
 .a_span.active{
     opacity:1;
+}
+
+.header_nav a{
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s ease;
+}
+
+.header_nav a:hover{
+    background-size: 100% 1px;
 }
 
 .header_nav_menu a:hover{
@@ -108,10 +132,15 @@ body{
     left: 0;
     top: 0;
     width: 100%;
-    background-color: #92c5d3;
+    background-color: #000;
     animation-name: show_header;
     animation-duration: 0.5s;
     z-index: 300;
+    padding: 15px 0;
+}
+
+.header_fixed a{
+    color: #fff;
 }
 
 @keyframes show_header{
@@ -136,7 +165,7 @@ body{
 
 .intro_img{
     transform: translateY(350px);
-    transition: all 3s linear;
+    transition: all 5s ease;
     transition-delay: 1s;
 }
 
@@ -163,6 +192,9 @@ body{
     color: #fff;
     top: -106px;
     margin-bottom: 115px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .hero_title h1{
@@ -178,6 +210,9 @@ body{
 
 .hero_text{
     display: flex;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .hero_text_help{
@@ -211,7 +246,7 @@ body{
     font-size: 75px;
     line-height: 91px;
    /* margin-bottom: 70px;*/
-  
+    
   
 }
 
@@ -249,12 +284,18 @@ body{
     font-size: 75px;
     line-height: 91px;
     margin-bottom: 70px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .service_page{
     display: flex;
     justify-content: flex-end;
     margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 
@@ -269,6 +310,9 @@ body{
 .service_line{
     width: 100%;
     border: 1px solid #FFFFFF;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 
@@ -277,7 +321,9 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 95px 0;
- 
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .accordion_title{
@@ -326,6 +372,9 @@ body{
 
 .companies_title{
     width: 379px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .companies_title h2{
@@ -343,6 +392,9 @@ body{
     width: 741px;
     margin-left: 121px;
     margin-bottom: 67px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 .companies_text p{
     font-size: 30px;
@@ -355,6 +407,9 @@ body{
     grid-column-gap: 69px;
     grid-row-gap: 55px;
     margin-left: 320px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .companies_card{
@@ -381,6 +436,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .companies_page p{
@@ -402,6 +460,9 @@ body{
     color: #fff;
     top: -106px;
     margin-bottom: 115px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .slider_title h1{
@@ -422,14 +483,20 @@ body{
 }
 
 .swiper{
-    
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: all 1s ease;  
 }
+
 
 .slider-buttons{
     position: absolute;
     left: 68%;
     /*float: right;*/
     user-select: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .swiper-button-prev p{
@@ -492,21 +559,33 @@ body{
     max-width: 487px;
 }
 
-.contact_content h1{
+.contact_text_h1{
     text-transform: uppercase;
     font-style: normal;
     font-weight: 500;
     font-size: 100px;
     line-height: 121px;
     margin-bottom: 96px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
-.contact_content p{
+.contact_text_p{
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
     margin-bottom: 127px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+
+.contact_link{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .contact_link a{
@@ -534,14 +613,26 @@ body{
     padding: 0 78px;
     padding-bottom: 97px;
     padding-top: 78px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
-.contact_form h1{
+.contact_form_h1{
     text-transform: none;
     font-weight: 500;
     font-size: 75px;
     line-height: 121px;
     padding-bottom: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+
+.form_item{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .form_input{
@@ -573,6 +664,7 @@ body{
 .form_input:focus::placeholder { 
     font-size: 15px; 
     transform: translateY(-25px);
+    transition: all 1s ease;
 }
 
 textarea{
@@ -604,6 +696,7 @@ textarea{
     background-color: #fff;
     border: 1px solid #fff;
     transition: all 0.3s ease;
+    
 }
 
 .form_button svg{
@@ -648,6 +741,12 @@ textarea{
     background-color: #BCDBE4;
 }
 
+.footer_logo{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+
 .footer_content{
     display: flex;
     justify-content: space-between;
@@ -658,6 +757,9 @@ textarea{
 
 .footer_links{
     width: 1470px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .footer_links_up{
@@ -683,18 +785,32 @@ textarea{
 }
 
 .footer_links_contact a{
-    display: block;
+    display: table;
     color: #000000;
     font-weight: normal;
     font-size: 16px;
-    line-height: 100%;
+    line-height: 1.5;
     text-transform: uppercase;
     margin-bottom: 16px;
+    
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s ease;
+}
+
+.footer_links_contact a:hover{
+    background-size: 100% 1px;
+    line-height: 1.5;
 }
 
 .footer_links_prtotect{
     width: 492px;
     margin-left: 310px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .protect_back_btn{
@@ -717,6 +833,9 @@ textarea{
     font-size: 20px;
     line-height: 100%;
     color:#000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .protect_capthcha a{
@@ -728,12 +847,17 @@ textarea{
     width: 100%;
     border: 0.9673px solid #000000;
     margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .footer_rights{
     display: flex;
     justify-content: space-between;
-
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .footer_rights a{
@@ -745,4 +869,153 @@ textarea{
 }
 .back_btn:hover{
     transform: translateY(-20px);
+    transition: all 1s ease;
+}
+
+/*SCROLL*/
+
+.hero_title.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.hero_text.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.service_title.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.service_accordion.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+.service_line.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+.service_page.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.companies_title.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+.companies_text.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+.companies_cards.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.companies_page.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.slider_title.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.slider-buttons.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.swiper.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.contact_text_h1.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.contact_text_p.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.contact_link.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.contact_form.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.contact_form_h1.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.form_item.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.footer_logo.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.footer_links.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.footer_links_prtotect.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.protect_capthcha.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.footer_line.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+.footer_rights.element-show{
+    opacity: 1;
+    transition: all 1s ease;
+    transform: translateY(0%);
 }

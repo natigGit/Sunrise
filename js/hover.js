@@ -1,4 +1,4 @@
-window.onload = function () {
+window.MouseEvent = function () {
     //ищем элемент по селектору
     var a = document.querySelector('.a_link');
     var b = document.querySelector('.a_span');
