@@ -85,39 +85,19 @@ html ::-webkit-scrollbar-track-piece {
     margin-left: 0;
 }
 
-.header_nav_menu a{
-    
+.span_link{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.a_link:hover + .span_link{
+    opacity: 1;
 }
 
 
-.a_span{
-    opacity:0;
-    transition: all 0.3s linear;
-}
-
-.a_span.active{
-    opacity:1;
-}
-
-.header_nav a{
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: 0% 1px;
-    transition: background-size .3s ease;
-}
-
-.header_nav a:hover{
-    background-size: 100% 1px;
-}
-
-.header_nav_menu a:hover{
-    
-}
-
-.header_nav_menu li:hover{
-    /*background: url(..//img/arrow_h.png) no-repeat center right;*/
-}
 
 .header_nav_menu a{
     color: #000;
@@ -141,6 +121,10 @@ html ::-webkit-scrollbar-track-piece {
 
 .header_fixed a{
     color: #fff;
+}
+
+.header_fixed .fill_good{
+    fill: #fff;
 }
 
 @keyframes show_header{
@@ -299,13 +283,34 @@ html ::-webkit-scrollbar-track-piece {
 }
 
 
-.service_page p{
+
+.service_page_a{
+    color: #fff;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 25px;
     line-height: 30px;
-    margin-right: 4px;
+    margin-right: 10px;
 }
+
+.service_page_img img{
+    transform: rotate(0deg);
+    transition: all 0.3s;
+}
+
+.service_page_a:hover + .service_page_img img{
+    transform: rotate(45deg);
+}
+
+/*
+.service_page a:hover{
+    transform: rotate(5deg);
+}
+
+.service_page a img:hover{
+    transform: rotate(45deg);
+}
+*/
 
 .service_line{
     width: 100%;
@@ -348,10 +353,11 @@ html ::-webkit-scrollbar-track-piece {
 .accordion_strelka img{
     cursor: pointer;
     transition: 0.3s;
+    transform-origin: 0 100%;
 }
 
 .accordion_strelka img:hover{
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 
@@ -441,8 +447,17 @@ html ::-webkit-scrollbar-track-piece {
     transition: all 1s ease;
 }
 
-.companies_page p{
-    margin-right: 6px;
+.companies_page_a{
+    margin-right: 10px;
+}
+
+.companies_page_img img{
+    transform: rotate(0deg);
+    transition: all 0.3s;
+}
+
+.companies_page_a:hover + .companies_page_img img{
+    transform: rotate(45deg);
 }
 
 /*COMPANIES END*/
@@ -658,13 +673,13 @@ html ::-webkit-scrollbar-track-piece {
     font-size: 20px;
     line-height: 24px;
     color: white;
-    transition: 0.5s;
+    transition: all 0.5s ease;
+    
 }
 
 .form_input:focus::placeholder { 
     font-size: 15px; 
     transform: translateY(-25px);
-    transition: all 1s ease;
 }
 
 textarea{
@@ -703,16 +718,18 @@ textarea{
     margin-left: 10px;
 }
 
+
 .form_button:hover *{
     fill: white;
     transition: all 0.3s ease;
 }
 
+
 .form_button:hover{
     color: #fff;
     background-color: transparent;
-    fill: white;
 }
+
 
 .contact_form label.error {
     font-size: 0.8em;
@@ -869,7 +886,6 @@ textarea{
 }
 .back_btn:hover{
     transform: translateY(-20px);
-    transition: all 1s ease;
 }
 
 /*SCROLL*/
