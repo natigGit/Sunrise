@@ -61,14 +61,14 @@ html ::-webkit-scrollbar-track-piece {
 }
 
 .header_content{
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
     align-items: center;
     color: #000;
 }
 
 .header_nav{
     margin-left: 270px;
+    
 }
 
 .header_nav_menu{
@@ -85,19 +85,24 @@ html ::-webkit-scrollbar-track-piece {
     margin-left: 0;
 }
 
+.span_link_active{
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
 .span_link{
     opacity: 0;
     display: flex;
     align-items: center;
     margin-left: 10px;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 
 .a_link:hover + .span_link{
     opacity: 1;
 }
-
-
 
 .header_nav_menu a{
     color: #000;
@@ -116,7 +121,7 @@ html ::-webkit-scrollbar-track-piece {
     animation-name: show_header;
     animation-duration: 0.5s;
     z-index: 300;
-    padding: 15px 0;
+    padding: 30px 0;
 }
 
 .header_fixed a{
@@ -124,6 +129,10 @@ html ::-webkit-scrollbar-track-piece {
 }
 
 .header_fixed .fill_good{
+    fill: #fff;
+}
+
+.header_fixed .fill_logo{
     fill: #fff;
 }
 
@@ -204,13 +213,13 @@ html ::-webkit-scrollbar-track-piece {
 }
 
 .hero_text_p{
-    width: 1095px;
+    width: 1177px;
     text-align: right;
 }
 
 .hero_text_p p{
-    font-size: 50px;
-    line-height: 61px;
+    font-size: 32px;
+    line-height: 39px;
 }
 
 /*SERVICES START*/
@@ -224,14 +233,12 @@ html ::-webkit-scrollbar-track-piece {
     color: #fff;
 }
 
-.service_title{
+.service_title h1{
     font-weight: bold;
     font-style: normal;
-    font-size: 75px;
-    line-height: 91px;
+    font-size: 58px;
+    line-height: 70px;
    /* margin-bottom: 70px;*/
-    
-  
 }
 
 .service_page{
@@ -282,8 +289,6 @@ html ::-webkit-scrollbar-track-piece {
     transition: all 1s ease;
 }
 
-
-
 .service_page_a{
     color: #fff;
     text-transform: uppercase;
@@ -291,15 +296,36 @@ html ::-webkit-scrollbar-track-piece {
     font-size: 25px;
     line-height: 30px;
     margin-right: 10px;
+    letter-spacing: 0.04em;
+    transition: all 0.5s ease;
 }
 
-.service_page_img img{
+
+.service_page_a:hover, .companies_page_a:hover{
+    background:-webkit-linear-gradient(45deg, #ff007a, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service_page_img svg, .companies_page_img svg{
     transform: rotate(0deg);
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
-.service_page_a:hover + .service_page_img img{
+.service_page_a:hover + .service_page_img svg{
     transform: rotate(45deg);
+}
+
+.service_page_a:active, .companies_page_a:active{
+    background:-webkit-linear-gradient(45deg, #ff007a, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease;
+}
+
+.service_page_a:active + .service_page_img .fill_sp{
+    fill: red;
+    transition: all 0.5s ease;
 }
 
 /*
@@ -333,15 +359,15 @@ html ::-webkit-scrollbar-track-piece {
 
 .accordion_title{
     font-weight: 500;
-    font-size: 50px;
-    line-height: 61px;
+    font-size: 39px;
+    line-height: 47px;
     width: 35%;
     white-space: nowrap;
 }
 
 .accordion_text{
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 22px;
     /*width: 573px;*/
     font-weight: 400;
 }
@@ -369,7 +395,7 @@ html ::-webkit-scrollbar-track-piece {
 .companies{
     background-color: #000;
     color: #fff;
-    padding-top: 140px;
+
 }
 
 .companies_content{
@@ -381,6 +407,7 @@ html ::-webkit-scrollbar-track-piece {
     opacity: 0;
     transform: translateY(20px);
     transition: all 1s ease;
+    padding-top: 96px;
 }
 
 .companies_title h2{
@@ -394,13 +421,19 @@ html ::-webkit-scrollbar-track-piece {
     color: #ff003d;
 }
 
+.companies_pocket{
+    text-align: center;
+    padding-top: 177px;
+    margin-left: 178px;
+}
+
 .companies_text{
     width: 741px;
-    margin-left: 121px;
-    margin-bottom: 67px;
     opacity: 0;
     transform: translateY(20px);
     transition: all 1s ease;
+    margin: 0 auto;
+    margin-bottom: 134px;
 }
 .companies_text p{
     font-size: 30px;
@@ -410,9 +443,8 @@ html ::-webkit-scrollbar-track-piece {
 .companies_cards{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-column-gap: 69px;
-    grid-row-gap: 55px;
-    margin-left: 320px;
+    grid-column-gap: 86px;
+    grid-row-gap: 69px;
     opacity: 0;
     transform: translateY(20px);
     transition: all 1s ease;
@@ -451,13 +483,23 @@ html ::-webkit-scrollbar-track-piece {
     margin-right: 10px;
 }
 
-.companies_page_img img{
+.companies_page_img svg{
     transform: rotate(0deg);
     transition: all 0.3s;
 }
 
-.companies_page_a:hover + .companies_page_img img{
+.companies_page_a{
+    transition: all 0.3s ease;
+}
+
+
+.companies_page_a:hover + .companies_page_img svg{
     transform: rotate(45deg);
+}
+
+.companies_page_a:active + .companies_page_img .fill_cm{
+    fill: red;
+    transition: all 0.5s ease;
 }
 
 /*COMPANIES END*/
@@ -482,9 +524,9 @@ html ::-webkit-scrollbar-track-piece {
 
 .slider_title h1{
     font-weight: 500;
-    font-size: 125px;
-    text-transform: uppercase;
+    font-size: 90px;
     line-height: 102.02%;
+    text-transform: uppercase;
     letter-spacing: 0.04em;
 }
 
@@ -503,6 +545,21 @@ html ::-webkit-scrollbar-track-piece {
     transition: all 1s ease;  
 }
 
+.slider_swiper{
+    margin-left: 100px;
+}
+
+.swiper-slide{
+    overflow: hidden;
+}
+
+.swiper-slide img{
+    transition: all 0.5s ease;
+}
+
+.swiper-slide img:hover{
+    transform: rotate(-3deg) scale(1.1);
+}
 
 .slider-buttons{
     position: absolute;
@@ -518,8 +575,8 @@ html ::-webkit-scrollbar-track-piece {
     color: #000;
     font-style: normal;
     font-weight: normal;
-    font-size: 75px;
-    line-height: 91px;
+    font-size: 40px;
+    line-height: 48px;
     text-transform: uppercase;
     position: absolute;
     margin-bottom: 150px;
@@ -530,11 +587,11 @@ html ::-webkit-scrollbar-track-piece {
     color: #000;
     font-style: normal;
     font-weight: normal;
-    font-size: 75px;
-    line-height: 91px;
+    font-size: 40px;
+    line-height: 48px;
     text-transform: uppercase;
     margin-bottom: 150px;
-    margin-left: 600px;
+    margin-left: 500px;
     transition: 0.3s ease;
 }
 
@@ -711,25 +768,50 @@ textarea{
     background-color: #fff;
     border: 1px solid #fff;
     transition: all 0.3s ease;
+}
+
+.form_button_svg{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.fill_form{
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
     
 }
 
-.form_button svg{
-    margin-left: 10px;
+.form_button:hover{
+    background-color: red;
+    border: 1px solid red;
+    color: #fff;
 }
 
+.form_button:hover .fill_form{
+    fill: #fff;
+}
 
+.form_button:hover .form_button_svg{
+    transform: rotate(45deg);
+}
+
+/*
 .form_button:hover *{
     fill: white;
+    transform: rotate(45deg);
     transition: all 0.3s ease;
 }
 
 
 .form_button:hover{
     color: #fff;
-    background-color: transparent;
+    background-color: red;
+    border: 1px solid red;
 }
-
+*/
 
 .contact_form label.error {
     font-size: 0.8em;
