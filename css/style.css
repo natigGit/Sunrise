@@ -12,11 +12,15 @@ li{
     list-style: none;
 }
 
-
+div{
+    display: block;
+}
 
 body{
     font-family: 'Inter', sans-serif;
     background-color: #BCDBE4;
+    padding: 0;
+    margin: 0;
     /*
     -webkit-touch-callout: none;
     -webkit-user-select: none;  
@@ -46,8 +50,10 @@ html ::-webkit-scrollbar-track-piece {
 }
 
 .wrapper{
+    width: 100%;
     max-width: 1770px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /*HEADER START*/
@@ -67,8 +73,9 @@ html ::-webkit-scrollbar-track-piece {
 }
 
 .header_nav{
-    margin-left: 270px;
-    
+    /*margin-left: 270px;*/
+    margin: 0 auto;
+    transform: translateX(-10%);
 }
 
 .header_nav_menu{
@@ -180,7 +187,7 @@ html ::-webkit-scrollbar-track-piece {
 }
 
 .hero_title{
-    width: 848px;
+    max-width: 848px;
     position: relative;
     color: #fff;
     top: -106px;
@@ -213,7 +220,7 @@ html ::-webkit-scrollbar-track-piece {
 }
 
 .hero_text_p{
-    width: 1177px;
+    max-width: 1177px;
     text-align: right;
 }
 
@@ -399,15 +406,15 @@ html ::-webkit-scrollbar-track-piece {
 }
 
 .companies_content{
-    display: flex;
+    display: block;
 }
 
 .companies_title{
-    width: 379px;
+    max-width: 379px;
     opacity: 0;
     transform: translateY(20px);
     transition: all 1s ease;
-    padding-top: 96px;
+    /*padding-top: 96px;*/
 }
 
 .companies_title h2{
@@ -422,22 +429,24 @@ html ::-webkit-scrollbar-track-piece {
 }
 
 .companies_pocket{
-    text-align: center;
-    padding-top: 177px;
-    margin-left: 178px;
+    display: flex;
+    align-items: center;
+    padding-top: 96px;
+    margin-bottom: 80px;
+    /*padding-top: 177px;
+    margin-left: 178px;*/
 }
 
 .companies_text{
-    width: 741px;
+    max-width: 741px;
     opacity: 0;
     transform: translateY(20px);
     transition: all 1s ease;
-    margin: 0 auto;
-    margin-bottom: 134px;
+    margin-left: 10%;
 }
 .companies_text p{
     font-size: 30px;
-    line-height: 36px;
+    line-height: 46px;
 }
 
 .companies_cards{
@@ -452,6 +461,7 @@ html ::-webkit-scrollbar-track-piece {
 
 .companies_card{
     cursor: pointer;
+    text-align: center;
 }
 
 .companies_card p{
@@ -512,10 +522,10 @@ html ::-webkit-scrollbar-track-piece {
 
 
 .slider_title{
-    width: 1250px;
+    /*width: 1250px;*/
     position: relative;
     color: #fff;
-    top: -106px;
+    top: -78px;
     margin-bottom: 115px;
     opacity: 0;
     transform: translateY(20px);
@@ -838,6 +848,7 @@ textarea{
 
 .footer{
     background-color: #BCDBE4;
+   
 }
 
 .footer_logo{
@@ -855,7 +866,7 @@ textarea{
 }
 
 .footer_links{
-    width: 1470px;
+    /*width: 1470px;*/
     opacity: 0;
     transform: translateY(20px);
     transition: all 1s ease;
@@ -872,7 +883,7 @@ textarea{
 
 .footer_links_contact{
     display: block;
-    margin-left: 200px;
+    margin-left: 200px; /*200*/
 }
 
 .footer_links_contact h3{
@@ -881,6 +892,7 @@ textarea{
     font-size: 20px;
     line-height: 100%;
     margin-bottom: 29px;
+    white-space: nowrap;
 }
 
 .footer_links_contact a{
@@ -905,7 +917,7 @@ textarea{
 }
 
 .footer_links_prtotect{
-    width: 492px;
+    max-width: 492px;
     margin-left: 310px;
     opacity: 0;
     transform: translateY(20px);
@@ -943,7 +955,7 @@ textarea{
 }
 
 .footer_line{
-    width: 100%;
+    /*width: 100%;*/
     border: 0.9673px solid #000000;
     margin-bottom: 40px;
     opacity: 0;
@@ -1117,3 +1129,38 @@ textarea{
     transition: all 1s ease;
     transform: translateY(0%);
 }
+
+
+/*ADAPTIVE*/
+/*
+@media (max-width: 1449.98px) {
+    .wrapper{
+        max-width: 1200px;
+    }
+    .header_nav{
+        transform: translateX(10%)
+    }
+    .header_nav_menu li{
+
+    }
+}
+
+@media (max-width: 991.98px) {
+    .wrapper{
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .wrapper{
+        max-width: 740px;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .wrapper{
+        max-width: none;
+    }
+}
+*/
+
