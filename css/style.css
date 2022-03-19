@@ -53,7 +53,7 @@ html ::-webkit-scrollbar-track-piece {
     width: 100%;
     max-width: 1770px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 25px;
 }
 
 /*HEADER START*/
@@ -154,6 +154,15 @@ html ::-webkit-scrollbar-track-piece {
     }
 }
 
+/*BURGER START*/
+
+.header_burger{
+    display: none;
+    cursor: pointer;
+}
+
+/*BURGER END*/
+
 /*HEADER END*/
 
 .intro{
@@ -234,6 +243,8 @@ html ::-webkit-scrollbar-track-piece {
 .services{
     padding-top: 144px;
     background-color: #000;
+    position: relative;
+    z-index: 23;
 }
 
 .services_content{
@@ -346,7 +357,7 @@ html ::-webkit-scrollbar-track-piece {
 */
 
 .service_line{
-    width: 100%;
+    max-width: 100%;
     border: 1px solid #FFFFFF;
     opacity: 0;
     transform: translateY(20px);
@@ -364,12 +375,20 @@ html ::-webkit-scrollbar-track-piece {
     transition: all 1s ease;
 }
 
+
+
 .accordion_title{
     font-weight: 500;
     font-size: 39px;
     line-height: 47px;
-    width: 35%;
+    min-width: 35%;
     white-space: nowrap;
+}
+
+.accordion_block{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
 }
 
 .accordion_text{
@@ -455,6 +474,7 @@ html ::-webkit-scrollbar-track-piece {
     grid-column-gap: 86px;
     grid-row-gap: 69px;
     opacity: 0;
+    margin-bottom: 335px;
     transform: translateY(20px);
     transition: all 1s ease;
 }
@@ -479,7 +499,6 @@ html ::-webkit-scrollbar-track-piece {
     text-transform: uppercase;
     font-size: 25px;
     line-height: 30px;
-    padding-top: 335px;
     color: #fff;
     display: flex;
     align-items: center;
@@ -522,7 +541,7 @@ html ::-webkit-scrollbar-track-piece {
 
 
 .slider_title{
-    /*width: 1250px;*/
+    max-width: 1250px;
     position: relative;
     color: #fff;
     top: -78px;
@@ -563,18 +582,43 @@ html ::-webkit-scrollbar-track-piece {
     overflow: hidden;
 }
 
+.swiper-slide-hide__block{
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 38px 40px;
+    background-color: #000;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    
+}
+
+.swiper-slide-hide__block-title{
+    font-size: 20px;
+    color: #fff;
+}
+
 .swiper-slide img{
-    transition: all 0.5s ease;
+    width: 100%;
+    transition: all 0.3s ease;
 }
 
 .swiper-slide img:hover{
-    transform: rotate(-3deg) scale(1.1);
+    transform: rotate(-4deg) scale(1.15);
+}
+
+.swiper-slide img:hover + .swiper-slide-hide__block{
+    transform: translateY(0%);
 }
 
 .slider-buttons{
     position: absolute;
-    left: 68%;
-    /*float: right;*/
+    left: 70%;
     user-select: none;
     opacity: 0;
     transform: translateY(20px);
@@ -601,7 +645,8 @@ html ::-webkit-scrollbar-track-piece {
     line-height: 48px;
     text-transform: uppercase;
     margin-bottom: 150px;
-    margin-left: 500px;
+    /*margin-left: 1000px;*/
+    margin-left: 550px;
     transition: 0.3s ease;
 }
 
@@ -634,6 +679,7 @@ html ::-webkit-scrollbar-track-piece {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 7%;
 }
 
 .contact_text{
@@ -671,6 +717,7 @@ html ::-webkit-scrollbar-track-piece {
 }
 
 .contact_link a{
+    display: block;
     color:#000;
     line-height: 35px;
 }
@@ -863,6 +910,7 @@ textarea{
     align-items: center;
     padding-top: 76px;
     padding-bottom: 90px;
+    gap: 5%;
 }
 
 .footer_links{
@@ -879,6 +927,10 @@ textarea{
 
 .footer_links_quick{
     display: flex;
+}
+
+.footer_links_img{
+    display: none;
 }
 
 .footer_links_contact{
@@ -956,6 +1008,7 @@ textarea{
 
 .footer_line{
     /*width: 100%;*/
+    max-width: 100%;
     border: 0.9673px solid #000000;
     margin-bottom: 40px;
     opacity: 0;
