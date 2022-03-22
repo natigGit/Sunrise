@@ -541,7 +541,7 @@ html ::-webkit-scrollbar-track-piece {
 
 
 .slider_title{
-    max-width: 1250px;
+    max-width: fit-content;
     position: relative;
     color: #fff;
     top: -78px;

@@ -449,12 +449,221 @@
 @media (max-width: 574.98px) {
     .wrapper{
         max-width: 540px;
+        padding: 0 10px;
+    }
+    .intro img{
+        width: 460px;
+        height: 460px;
+        transform: translateY(100px) translateX(-10px);
+    }
+    .hero_title{
+        top: -56px;
+    }
+    .hero_title h1{
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .accordion_title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .accordion_text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .accordion_strelka {
+        margin-top: 90px;
+    }
+    .service_accordion {
+        gap: 0; 
+    }
+    .companies_cards {
+        grid-template-columns: auto;
+    }
+    .companies_pocket {
+        display: block;
+        
+    }
+    .companies_text{
+        margin-left: 0;
+    }
+    .companies_cards {
+        margin-bottom: 135px;
+    }
+    .slider-buttons{
+        left: 55%;
+    }
+    .swiper-slide-hide__block {
+        padding: 19px 20px;
+    }
+    .contact {
+        padding-bottom: 103px;
+    }
+    .footer_links_contact {
+        margin-left: 10%;
+    }
+    .header_nav{ 
+        width: 75%;
+    }
+    .footer_rights {
+        display: block;
+        line-height: 26px;
     }
 }
 
+
 @media (max-width: 479.98px) {
     .wrapper{
+        max-width: 450px;
+        padding: 0 15px;
+    }
+    .hero_title{
+        padding: 0;
+    }
+    .intro img{
+        width: 400px;
+        height: 400px;
+    }
+    .intro_img{
+        transition: all 5s ease;
+        transform: translateY(150px) translateX(-10px);
+    }
+    .intro_img.active{
+        transform: translateY(-50px);
+    }
+    .hero_text_p {
+        padding: 0 20px;
+    }
+    .hero_title h1 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+    .hero_title{
+        top: -50px;
+    }
+    .header_nav{ 
+        width: 85%;
+    }
+    .slider_title{
+        max-width: fit-content;
+        top: -19px;
+    }
+    .slider_title h1{
+        font-size: 24px;
+    }
+    .companies_page_a {
+        font-size: 10px;
+    }
+    .contact_form h1 {
+        font-size: 36px;
+        line-height: 65px;
+    }
+    .footer_links_prtotect {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 374.98px){
+    .wrapper{
         max-width: none;
+    }
+    .hero{
+        margin-top: -180px;
+        padding-bottom: 75px;
+    }
+    .hero_title{
+        padding: 0;
+        top: -43px;
+    }
+    .hero_title h1{
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .hero_text_p {
+        padding: 0;
+    }
+    .hero_text_p p{
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .intro img{
+        width: 300px;
+        height: 300px;
+    }
+    .intro_img{
+        transition: all 5s ease;
+        transform: translateY(350px) translateX(-10px);
+    }
+    .intro_img.active{
+        transform: translateY(0);
+    }
+    .service_title h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    .accordion_strelka img {
+        width: 36px;
+        height: 36px;
+    }
+    .slider_title{
+        top: -17px;
+    }
+    .slider_title h1 {
+        font-size: 20px;
+    }
+    .slider-buttons{
+        left: 45%;
+    }       
+    .form_button {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .footer_content {
+        padding: 0;
+        padding-top: 50px;
+    }
+    .footer_links_contact h3 {
+        font-size: 16px;
+    }
+    .footer_links_contact a {
+        font-size: 12px;
+    }
+    .footer_links_img img {
+        max-width: 65px;
+    }
+    .protect_back_btn h1 {
+        font-size: 35px;
+    }
+    .back_btn img{
+        width: 86px;
+        height: 86px;
+    }
+    .protect_back_btn {
+        margin-top: 20px;
+    }
+    .footer_links_prtotect {
+        margin-left: 0;
+    }
+    .protect_back_btn {
+        margin-bottom: 20px;
+    }
+    .header_nav_menu a {
+        font-size: 18px;
+    }
+    .span_link_active svg{
+        width: 16px;
+        height: 16px;
+    }
+    .contact_form {
+        padding: 0 30px;
+        padding-bottom: 97px;
+        padding-top: 78px;
+    }
+}
+
+@media (max-width: 319.98px){
+    .wrapper{
+
     }
 }
 
