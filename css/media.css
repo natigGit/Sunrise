@@ -38,6 +38,9 @@
     .slider_title h1{
         font-size: 75px;
     }
+    .slider-buttons{
+        left: 65%;
+    }
     .companies_page_a{
         font-size: 20px;
     }
@@ -174,9 +177,13 @@
         fill: black;
     }
 
-    .header_nav .header_burger::before, .header_nav .header_burger::after {
+    .header_fixed .header_burger.active::before {
         background-color: #000;
-   }
+    }
+    .header_fixed .header_burger.active::after {
+        background-color: #000;
+    }
+
     .header_fixed .header_nav a{
         color: #000;
     }
@@ -319,13 +326,15 @@
     }
     .service_accordion{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
     }
+    
 
     .accordion_title{
         grid-column-start: 1;
         grid-column-end: 2;
         gap: 0;
+        padding-bottom: 50px;
     }
 
     .accordion_text{
@@ -338,9 +347,18 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-        margin-top: 80px;
+        margin-top: auto;
     }
-    
+
+    .problem{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-bottom: auto;
+        margin-top: 0;
+    }
+
     .accordion_title{
         margin-bottom: 0;
     }
@@ -472,7 +490,7 @@
         line-height: 18px;
     }
     .accordion_strelka {
-        margin-top: 90px;
+        /*margin-top: 90px;*/
     }
     .service_accordion {
         gap: 0; 
@@ -509,6 +527,10 @@
         display: block;
         line-height: 26px;
     }
+    .companies_pocket {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 
@@ -523,6 +545,7 @@
     }
     .hero_title{
         padding: 0;
+        max-width: 305px;
     }
     .intro img{
         width: 350px;
@@ -560,6 +583,9 @@
     }
     .companies_page_a {
         font-size: 10px;
+    }
+    .companies_title h2{
+        margin-bottom: 30px;
     }
     .contact_form h1 {
         font-size: 36px;
