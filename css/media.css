@@ -462,12 +462,23 @@
         padding: 15px;
         padding-top: 50px;
     }
+    .companies_page {
+        margin-bottom: -1%;
+    }
 }
 
 @media (max-width: 574.98px) {
     .wrapper{
         max-width: 540px;
         padding: 0 10px;
+    }
+    .header_nav_menu a {
+        font-size: 24px;
+    }
+    .span_link_active{
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
     }
     .intro img{
         width: 460px;
@@ -530,6 +541,12 @@
     .companies_pocket {
         padding-left: 30px;
         padding-right: 30px;
+    }
+    .swiper-button-next p {
+        margin-bottom: 100px;
+    }
+    .swiper-button-prev p{
+        margin-bottom: 100px;
     }
 }
 
