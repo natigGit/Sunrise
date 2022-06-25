@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/blog-media.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <title>Sunrise</title>
 </head>
-
 <body>
     <header class="header" id="header">
         <div class="wrapper">
             <div class="header_content">
                 <div class="header_logo">
-                    <svg width="163" height="77" viewbox="0 0 163 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- izmeneniya viewBox --> <svg width="163" height="77" viewbox="0 0 163 80" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path class="fill_logo"
                             d="M11.776 58.64C8.36267 58.64 5.78133 57.68 4.032 55.76C2.28267 53.7973 1.408 51.0027 1.408 47.376L1.408 44.816L8.064 44.816L8.064 47.888C8.064 50.7893 9.28 52.24 11.712 52.24C12.9067 52.24 13.8027 51.8987 14.4 51.216C15.04 50.4907 15.36 49.3387 15.36 47.76C15.36 45.8827 14.9333 44.24 14.08 42.832C13.2267 41.3813 11.648 39.6533 9.344 37.648C6.44267 35.088 4.416 32.784 3.264 30.736C2.112 28.6453 1.536 26.2987 1.536 23.696C1.536 20.1547 2.432 17.424 4.224 15.504C6.016 13.5413 8.61867 12.56 12.032 12.56C15.4027 12.56 17.9413 13.5413 19.648 15.504C21.3973 17.424 22.272 20.1973 22.272 23.824L22.272 25.68L15.616 25.68L15.616 23.376C15.616 21.84 15.3173 20.7307 14.72 20.048C14.1227 19.3227 13.248 18.96 12.096 18.96C9.74933 18.96 8.576 20.3893 8.576 23.248C8.576 24.8693 9.00267 26.384 9.856 27.792C10.752 29.2 12.352 30.9067 14.656 32.912C17.6 35.472 19.6267 37.7973 20.736 39.888C21.8453 41.9787 22.4 44.432 22.4 47.248C22.4 50.9173 21.4827 53.7333 19.648 55.696C17.856 57.6587 15.232 58.64 11.776 58.64ZM36.6765 58.64C33.2632 58.64 30.6605 57.68 28.8685 55.76C27.0765 53.7973 26.1805 51.0027 26.1805 47.376L26.1805 13.2L33.2205 13.2L33.2205 47.888C33.2205 49.424 33.5192 50.5333 34.1165 51.216C34.7565 51.8987 35.6525 52.24 36.8045 52.24C37.9565 52.24 38.8312 51.8987 39.4285 51.216C40.0685 50.5333 40.3885 49.424 40.3885 47.888L40.3885 13.2L47.1725 13.2L47.1725 47.376C47.1725 51.0027 46.2765 53.7973 44.4845 55.76C42.6925 57.68 40.0898 58.64 36.6765 58.64ZM52.1865 13.2L61.0185 13.2L67.8665 40.016L67.9945 40.016L67.9945 13.2L74.2665 13.2L74.2665 58L67.0345 58L58.5865 25.296L58.4585 25.296L58.4585 58L52.1865 58L52.1865 13.2ZM79.499 13.2L89.931 13.2C93.5577 13.2 96.203 14.0533 97.867 15.76C99.531 17.424 100.363 20.0053 100.363 23.504L100.363 26.256C100.363 30.9067 98.827 33.8507 95.755 35.088L95.755 35.216C97.4617 35.728 98.6563 36.7733 99.339 38.352C100.064 39.9307 100.427 42.0427 100.427 44.688L100.427 52.56C100.427 53.84 100.47 54.8853 100.555 55.696C100.64 56.464 100.854 57.232 101.195 58L94.027 58C93.771 57.2747 93.6003 56.592 93.515 55.952C93.4297 55.312 93.387 54.16 93.387 52.496L93.387 44.304C93.387 42.256 93.0457 40.8267 92.363 40.016C91.723 39.2053 90.5923 38.8 88.971 38.8L86.539 38.8L86.539 58L79.499 58L79.499 13.2ZM89.099 32.4C90.507 32.4 91.5523 32.0373 92.235 31.312C92.9603 30.5867 93.323 29.3707 93.323 27.664L93.323 24.208C93.323 22.5867 93.0243 21.4133 92.427 20.688C91.8723 19.9627 90.9763 19.6 89.739 19.6L86.539 19.6L86.539 32.4L89.099 32.4ZM105.311 13.2L112.352 13.2L112.351 58L105.311 58L105.311 13.2ZM126.776 58.64C123.363 58.64 120.781 57.68 119.032 55.76C117.283 53.7973 116.408 51.0027 116.408 47.376L116.408 44.816L123.064 44.816L123.064 47.888C123.064 50.7893 124.28 52.24 126.712 52.24C127.907 52.24 128.803 51.8987 129.4 51.216C130.04 50.4907 130.36 49.3387 130.36 47.76C130.36 45.8827 129.933 44.24 129.08 42.832C128.227 41.3813 126.648 39.6533 124.344 37.648C121.443 35.088 119.416 32.784 118.264 30.736C117.112 28.6453 116.536 26.2987 116.536 23.696C116.536 20.1547 117.432 17.424 119.224 15.504C121.016 13.5413 123.619 12.56 127.032 12.56C130.403 12.56 132.941 13.5413 134.648 15.504C136.397 17.424 137.272 20.1973 137.272 23.824L137.272 25.68L130.616 25.68L130.616 23.376C130.616 21.84 130.317 20.7307 129.72 20.048C129.123 19.3227 128.248 18.96 127.096 18.96C124.749 18.96 123.576 20.3893 123.576 23.248C123.576 24.8693 124.003 26.384 124.856 27.792C125.752 29.2 127.352 30.9067 129.656 32.912C132.6 35.472 134.627 37.7973 135.736 39.888C136.845 41.9787 137.4 44.432 137.4 47.248C137.4 50.9173 136.483 53.7333 134.648 55.696C132.856 57.6587 130.232 58.64 126.776 58.64ZM141.436 13.2L160.637 13.2L160.637 19.6L148.477 19.6L148.477 31.44L158.141 31.44L158.141 37.84L148.477 37.84L148.476 51.6L160.637 51.6L160.637 58L141.436 58L141.436 13.2Z"
                             fill="black" />
@@ -35,8 +33,8 @@
                     <ul class="header_nav_menu menu">
                         <li class="menu__item active">
                             <a class="a_link" href="index.html">home</a>
-                            <span class="span_link_active">
-                                <svg width="11" height="10" viewbox="0 0 11 10" fill="none"
+                            <span class="span_link">
+                                <!-- izmeneniya --> <svg width="11" height="10" viewbox="0 0 11 10" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M2 1L8.29834 1L0.105957 9.19239L0.813063 9.8995L9 1.71256L9 8H10V0.712558L10.0055 0.707107L10 0.701656V0H2V1Z"
@@ -47,7 +45,7 @@
                         <li class="menu__item">
                             <a class="a_link" href="services.html">services</a>
                             <span class="span_link">
-                                <svg width="11" height="10" viewbox="0 0 11 10" fill="none"
+                                <!-- izmeneniya --> <svg width="11" height="10" viewbox="0 0 11 10" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M2 1L8.29834 1L0.105957 9.19239L0.813063 9.8995L9 1.71256L9 8H10V0.712558L10.0055 0.707107L10 0.701656V0H2V1Z"
@@ -58,7 +56,7 @@
                         <li class="menu__item">
                             <a class="a_link menu__item-link" href="products.html">products</a>
                             <span class="span_link">
-                                <svg width="11" height="10" viewbox="0 0 11 10" fill="none"
+                                <!-- izmeneniya --> <svg width="11" height="10" viewbox="0 0 11 10" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M2 1L8.29834 1L0.105957 9.19239L0.813063 9.8995L9 1.71256L9 8H10V0.712558L10.0055 0.707107L10 0.701656V0H2V1Z"
@@ -68,8 +66,8 @@
                         </li>
                         <li class="menu__item">
                             <a class="a_link menu__item-link" href="blog.html">blog</a>
-                            <span class="span_link">
-                                <svg width="11" height="10" viewbox="0 0 11 10" fill="none"
+                            <span class="span_link_active">
+                                <!-- izmeneniya --> <svg width="11" height="10" viewbox="0 0 11 10" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M2 1L8.29834 1L0.105957 9.19239L0.813063 9.8995L9 1.71256L9 8H10V0.712558L10.0055 0.707107L10 0.701656V0H2V1Z"
@@ -80,7 +78,7 @@
                         <li class="menu__item menu__item-link">
                             <a class="a_link" href="contacts.html">contacts</a>
                             <span class="span_link">
-                                <svg width="11" height="10" viewbox="0 0 11 10" fill="none"
+                                <!-- izmeneniya --> <svg width="11" height="10" viewbox="0 0 11 10" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M2 1L8.29834 1L0.105957 9.19239L0.813063 9.8995L9 1.71256L9 8H10V0.712558L10.0055 0.707107L10 0.701656V0H2V1Z"
@@ -91,327 +89,145 @@
                     </ul>
                 </nav>
             </div>
+            <!-- <div class="services_line"></div> -->
         </div>
     </header>
-
-    <main>
-        <section class="intro">
-            <div class="wrapper">
-                <img class="intro_img" src="img/kruq.png" alt="">
+    <div class="wrapper">
+        <div class="services_line"></div>
+    </div>
+    <div class="filter">
+        <div class="wrapper">
+            <div class="filter__head titan">
+                Reads
             </div>
-        </section>
-        <section class="hero">
-            <div class="wrapper">
-                <div class="hero_content">
-                    <div class="hero_title titan">
-                        <h1><span>Everywhere</span> at the<br> end of the<br>time</h1>
-                    </div>
-                    <div class="hero_text titan">
-                        <div class="hero_text_help"></div>
-                        <div class="hero_text_p">
-                            <p>Our intelligent digital strategy, apragmatic and thoughtful approach to solving business
-                                calls deliver a successful framework for both you and your audience.</p>
+        </div>
+        <div class="wrapper">
+            <ul class="list titan">
+                <li class="list__item active" data-id="all">All</li>
+                <li class="list__item" data-id="design">Design</li>
+                <li class="list__item" data-id="front">Front-End</li>
+                <li class="list__item" data-id="back">Back-End</li>
+                <li class="list__item" data-id="android">Android-Dev</li>
+            </ul>
+            <div class="blocks">
+                <div class="blocks__row">
+                    <div class="blocks__item front titan">
+                        <div class="blocks__img">
+                            <img src="img/filter-1.jpg" alt="">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="services">
-            <div class="wrapper">
-                <div class="services_content">
-                    <div class="service_title titan">
-                        <h1>Our services</h1>
-                    </div>
-                    <div class="service_page titan">
-                        <a href="#" class="service_page_link">
-                            <span class="service_page_a">service page</span>
-                            <span class="service_page_img">
-                                <svg width="20" height="20" viewbox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="fill_sp"
-                                        d="M0.545086 17.4004L2.77712 19.6325L16.1693 6.24029V18.5164L19.3388 18.5164V0.838778H1.6611L1.6611 4.00826L13.9373 4.00826L0.545086 17.4004Z"
-                                        fill="white" />
+                        <div class="blocks__nav">
+                            <div class="blocks__name">Front-End tips</div>
+                            <div class="blocks__arr">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 23.3553L21.886 23.3553L21.886 5.31599L2.20191 25L9.10812e-07 22.7981L19.6841 3.11404L1.64474 3.11403L1.64474 -1.02089e-06L25 0L25 23.3553Z" fill="#EFE5BF"/>
                                 </svg>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="service_line titan"></div>
-                    <div class="service_accordions">
-                        <div class="service_accordion titan">
-                            <div class="accordion_title">
-                                <h3>Web Development</h3>
-                            </div>
-                            <div class="accordion_text">
-                                <p>We focus our efforts on building results-driven development environments that are
-                                    optimized, responsive, and scalable.
-                                    <br>This ensures your products will remain stable and relevant.</p>
-                            </div>
-                            <div class="accordion_strelka">
-                                <a href="#"><img src="./img/Strelka.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="service_line titan"></div>
-                        <div class="service_accordion titan">
-
-                            <div class="accordion_title">
-                                <h3>Web Design</h3>
-                            </div>
-                            <div class="accordion_text">
-                                <p>First impression of the website is the most important thing.
-                                    <br>Good picked colors, nice fonts, amazing animations and incredible details,all of
-                                    these things will make sure that the user will have an unforgettable impression of
-                                    your website. </p>
-                            </div>
-
-                            <div class="accordion_strelka problem">
-                                <a href="#"><img src="./img/Strelka.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="service_line titan"></div>
-                        <div class="service_accordion titan">
-
-                            <div class="accordion_title">
-                                <h3>Back-end Development</h3>
-                            </div>
-                            <div class="accordion_text">
-                                <p>Web development is the process of creating a website or web application.</p>
-                            </div>
-
-                            <div class="accordion_strelka">
-                                <a href="#"><img src="./img/Strelka.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="service_line titan"></div>
-                        <div class="service_accordion titan">
-
-                            <div class="accordion_title">
-                                <h3>Front-end Development</h3>
-                            </div>
-                            <div class="accordion_text">
-                                <p>Web development is the process of creating a website or web application.</p>
-                            </div>
-
-                            <div class="accordion_strelka">
-                                <a href="#"><img src="./img/Strelka.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="service_line titan"></div>
-                        <div class="service_accordion titan">
-
-                            <div class="accordion_title">
-                                <h3>Android Development</h3>
-                            </div>
-                            <div class="accordion_text">
-                                <p>Web development is the process of creating a website or web application.</p>
-                            </div>
-
-                            <div class="accordion_strelka">
-                                <a href="#"><img src="./img/Strelka.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="service_line titan"></div>
-                        <div class="service_accordion titan">
-
-                            <div class="accordion_title">
-                                <h3>UI/UX Development</h3>
-                            </div>
-                            <div class="accordion_text">
-                                <p>The best curated designs build long-lasting confidence and trust in your product and
-                                    brand. That's why we create cutting edge design interfaces that are custom,
-                                    engaging, and memorable.</p>
-                            </div>
-
-                            <div class="accordion_strelka">
-                                <a href="#"><img src="./img/Strelka.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="service_line titan"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="companies">
-            <div class="wrapper">
-                <div class="companies_content">
-                    <div class="companies_pocket">
-                        <div class="companies_title titan">
-                            <h2>You are in <span>good </span>company</h2>
-                        </div>
-                        <div class="companies_text titan">
-                            <p>We’ve worked with a wide array of clients across the globe to apply design fundamentals
-                                of elegance, simplicity.</p>
-                        </div>
-                    </div>
-                    <div class="companies_cards titan">
-                        <div class="companies_card">
-                            <p>logo</p>
-                        </div>
-                        <div class="companies_card">
-                            <p>logo</p>
-                        </div>
-                        <div class="companies_card">
-                            <p>logo</p>
-                        </div>
-                        <div class="companies_card">
-                            <p>logo</p>
-                        </div>
-                        <div class="companies_card">
-                            <p>logo</p>
-                        </div>
-                        <div class="companies_card">
-                            <p>logo</p>
-                        </div>
-                        <div class="companies_card">
-                            <p>logo</p>
-                        </div>
-                        <div class="companies_card">
-                            <p>logo</p>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="companies_page titan">
-                    <span class="companies_page_a">products page</span>
-                    <span class="companies_page_img">
-                        <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="fill_cm"
-                                d="M0.545086 17.4004L2.77712 19.6325L16.1693 6.24029V18.5164L19.3388 18.5164V0.838778H1.6611L1.6611 4.00826L13.9373 4.00826L0.545086 17.4004Z"
-                                fill="white" />
-                        </svg>
-                    </span>
-                </a>
-            </div>
-        </section>
-        <section class="slider">
-            <div class="wrapper">
-                <div class="slider_content">
-                    <div class="slider_title titan">
-                        <h1>Have a look at <br><span class="span_1">what</span><span> we’ve done</span></h1>
-                    </div>
-                </div>
-            </div>
-            <div class="slider_swiper">
-                <div class="slider-buttons titan">
-                    <div class="swiper-button-prev">
-                        <p>prev</p>
-                    </div>
-                    <div class="swiper-button-next">
-                        <p>next</p>
-                    </div>
-                </div>
-                <div class="swiper titan">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <a href="#" class="swiper-slide">
-                            <img src="img/swiper_1.jpg" alt="">
-                            <div class="swiper-slide-hide__block">
-                                <div class="swiper-slide-hide__block-title">Work</div>
-                                <div class="swiper-slide-hide__block-icon">
-                                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.545086 17.4004L2.77712 19.6325L16.1693 6.24029V18.5164L19.3388 18.5164V0.838778H1.6611L1.6611 4.00826L13.9373 4.00826L0.545086 17.4004Z"
-                                            fill="white" />
+                        <div class="blocks__hide">
+                            <div class="blocks__subtitle">23 May, 2022 / Web Design</div>
+                            <div class="blocks__title">Web Design in Figma 2022
+                                A new step forward? </div>
+                            <div class="blocks__under">
+                                <div class="blocks__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisi massa euismod tortor. Tristique cursus nulla a diam</div>
+                                <div class="blocks__arr">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25 23.3553L21.886 23.3553L21.886 5.31599L2.20191 25L9.10812e-07 22.7981L19.6841 3.11404L1.64474 3.11403L1.64474 -1.02089e-06L25 0L25 23.3553Z" fill="#EFE5BF"/>
                                     </svg>
                                 </div>
                             </div>
-                        </a>
-                        <a href="#" class="swiper-slide">
-                            <img src="img/swiper_2.jpg" alt="">
-                            <div class="swiper-slide-hide__block">
-                                <div class="swiper-slide-hide__block-title">Work</div>
-                                <div class="swiper-slide-hide__block-icon">
-                                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.545086 17.4004L2.77712 19.6325L16.1693 6.24029V18.5164L19.3388 18.5164V0.838778H1.6611L1.6611 4.00826L13.9373 4.00826L0.545086 17.4004Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="swiper-slide">
-                            <img src="img/swiper_1.jpg" alt="">
-                            <div class="swiper-slide-hide__block">
-                                <div class="swiper-slide-hide__block-title">Work</div>
-                                <div class="swiper-slide-hide__block-icon">
-                                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.545086 17.4004L2.77712 19.6325L16.1693 6.24029V18.5164L19.3388 18.5164V0.838778H1.6611L1.6611 4.00826L13.9373 4.00826L0.545086 17.4004Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contact">
-            <div class="wrapper">
-                <div class="contact_content">
-                    <div class="contact_text">
-                        <h1 class="contact_text_h1 titan">contact</h1>
-                        <p class="contact_text_p titan">28 may street<br>Baku, Azerbaijan</p>
-                        <div class="contact_link titan">
-                            <a href="#">Follow Our Instagram</a>
-                            <a href="#">@sunrisestudio</a>
                         </div>
                     </div>
-                    <div class="contact_form titan">
-                        <h1 class="contact_form_h1 titan">Let’s chat!</h1>
-                            <form action="#" id="form" class="form_content">
-                                <div class="form_item titan">
-                                    <label for="formName" class="form_label">
-                                        <input id="formName" type="text" name="name" class="form_input _req"
-                                            placeholder="NAME" autocomplete="off">
-                                    </label>
+                    <div class="blocks__item design titan">
+                        <div class="blocks__img">
+                            <img src="img/filter-2.jpg" alt="">
+                        </div>
+                        <div class="blocks__nav">
+                            <div class="blocks__name">What is User Experience?</div>
+                            <div class="blocks__arr">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 23.3553L21.886 23.3553L21.886 5.31599L2.20191 25L9.10812e-07 22.7981L19.6841 3.11404L1.64474 3.11403L1.64474 -1.02089e-06L25 0L25 23.3553Z" fill="#EFE5BF"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blocks__hide">
+                            <div class="blocks__subtitle">23 May, 2022 / Web Design</div>
+                            <div class="blocks__title">Web Design in Figma 2022
+                                A new step forward? </div>
+                            <div class="blocks__under">
+                                <div class="blocks__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisi massa euismod tortor. Tristique cursus nulla a diam</div>
+                                <div class="blocks__arr">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25 23.3553L21.886 23.3553L21.886 5.31599L2.20191 25L9.10812e-07 22.7981L19.6841 3.11404L1.64474 3.11403L1.64474 -1.02089e-06L25 0L25 23.3553Z" fill="#EFE5BF"/>
+                                    </svg>
                                 </div>
-                                <div class="form_item titan">
-                                    <label for="formEmail" class="form_label">
-                                        <input id="formEmail" type="email" name="email" class="form_input _req _email"
-                                            placeholder="EMAIL" autocomplete="off">
-                                    </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blocks__item android titan">
+                        <div class="blocks__img">
+                            <img src="img/filter-3.jpg" alt="">
+                        </div>
+                        <div class="blocks__nav">
+                            <div class="blocks__name">Java Development</div>
+                            <div class="blocks__arr">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 23.3553L21.886 23.3553L21.886 5.31599L2.20191 25L9.10812e-07 22.7981L19.6841 3.11404L1.64474 3.11403L1.64474 -1.02089e-06L25 0L25 23.3553Z" fill="#FC825B"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blocks__hide">
+                            <div class="blocks__subtitle">23 May, 2022 / Web Design</div>
+                            <div class="blocks__title">Web Design in Figma 2022
+                                A new step forward? </div>
+                            <div class="blocks__under">
+                                <div class="blocks__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisi massa euismod tortor. Tristique cursus nulla a diam</div>
+                                <div class="blocks__arr">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25 23.3553L21.886 23.3553L21.886 5.31599L2.20191 25L9.10812e-07 22.7981L19.6841 3.11404L1.64474 3.11403L1.64474 -1.02089e-06L25 0L25 23.3553Z" fill="#FC825B"/>
+                                    </svg>
                                 </div>
-                                <div class="form_item titan">
-                                    <label for="formMessage" class="form_label">
-                                        <textarea name="Message" id="formMessage" class="form_input _req" cols="10"
-                                            rows="4" placeholder="PROJECT DETAILS" wrap="on"></textarea>
-                                    </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blocks__item back titan">
+                        <div class="blocks__img">
+                            <img src="img/filter-4.jpg" alt="">
+                        </div>
+                        <div class="blocks__nav">
+                            <div class="blocks__name">Back-End Development</div>
+                            <div class="blocks__arr">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 23.3553L21.886 23.3553L21.886 5.31599L2.20191 25L9.10812e-07 22.7981L19.6841 3.11404L1.64474 3.11403L1.64474 -1.02089e-06L25 0L25 23.3553Z" fill="#A5D3ED"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blocks__hide">
+                            <div class="blocks__subtitle">23 May, 2022 / Web Design</div>
+                            <div class="blocks__title">Web Design in Figma 2022
+                                A new step forward? </div>
+                            <div class="blocks__under">
+                                <div class="blocks__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisi massa euismod tortor. Tristique cursus nulla a diam</div>
+                                <div class="blocks__arr">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25 23.3553L21.886 23.3553L21.886 5.31599L2.20191 25L9.10812e-07 22.7981L19.6841 3.11404L1.64474 3.11403L1.64474 -1.02089e-06L25 0L25 23.3553Z" fill="#A5D3ED"/>
+                                    </svg>
                                 </div>
-                                <div class="form_item titan">
-                                    <button type="submit" class="form_button titan">
-                                        <span class="form_button_p">submit</span>
-                                        <span class="form_button_svg">
-                                            <svg width="26" height="26" viewbox="0 0 26 26" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path class="fill_form"
-                                                    d="M0.396212 22.8034L3.37463 25.7818L21.2451 7.91129L21.2451 24.2926H25.4745V0.703525H1.88542L1.88542 4.93287L18.2667 4.93287L0.396212 22.8034Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </div>
-                            </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-
+        </div>
+    </div>
     <footer class="footer">
         <div class="wrapper">
             <div class="footer_content">
                 <div class="footer_logo titan">
-                    <img src="./img/footer_logo.jpg" alt="logo">
+                    <img src="./img/product_footer-logo.svg" alt="logo">
                 </div>
                 <div class="footer_links titan">
                     <div class="footer_links_up">
                         <div class="footer_links_quick">
-                            <div class="footer_links_img">
-                                <img src="./img/footer_logo.svg" alt="">
-                            </div>
                             <div class="footer_links_contact">
                                 <h3>Quick Links</h3>
                                 <a href="#">home</a>
@@ -433,7 +249,12 @@
                                 <h1>BACK TO
                                     THE TOP</h1>
                                 <a href="#" class="back_btn">
-                                    <img src="./img/back_arrow.svg" alt="">
+                                    <!-- izmeneniya --> <svg width="107" height="108" viewbox="0 0 107 108" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M46.3898 25.8299L9.59217 62.9714L0.703839 54L53.5 0.710424L106.296 54L97.4078 62.9714L60.6102 25.8299L59.7551 24.9667L59.7551 26.1818L59.7551 107.5L47.245 107.5L47.2449 26.1818L47.2449 24.9667L46.3898 25.8299Z"
+                                            fill="white" stroke="white" />
+                                    </svg>
                                 </a>
                             </div>
                             <div class="protect_capthcha titan">
@@ -453,6 +274,10 @@
             </div>
         </div>
     </footer>
+
+
+
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
@@ -477,5 +302,5 @@
 <script src="./js/swiper.js"></script>
 <script src="./js/form.js"></script>
 <script src="./js/back.js"></script>
-
+<script src="./js/filter.js"></script>
 </html>
