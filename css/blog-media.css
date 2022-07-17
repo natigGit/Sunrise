@@ -5,7 +5,7 @@
     .blocks__row{
         width: 100%;
         grid-template-columns: auto auto;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 }
 
@@ -41,7 +41,6 @@
     .blocks__img{
         height: 380px;
     }
-   
 }
 
 
@@ -50,8 +49,11 @@
         font-size: 14px;
     }
     .blocks__title{
-    
         font-size: 26px;
         line-height: 1.1;
+    }
+
+    .blocks__hide{
+        max-height: 340px;
     }
 }

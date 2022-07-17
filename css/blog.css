@@ -185,7 +185,6 @@ html ::-webkit-scrollbar-track-piece {
 
 .filter{
     padding-top: 70px;
-    /* padding-bottom: 1090px; */
     padding-bottom: 75px;
 }
 
@@ -249,6 +248,7 @@ html ::-webkit-scrollbar-track-piece {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 75px;
+    position: relative;
 }
 
 .blocks__item {
@@ -259,6 +259,10 @@ html ::-webkit-scrollbar-track-piece {
     opacity: 0;
     transform: translateY(20px);
     transition: all 1s ease;
+}
+
+.front, .design, .android, .back{
+    position: relative;
 }
 
 .blocks__item.active{
